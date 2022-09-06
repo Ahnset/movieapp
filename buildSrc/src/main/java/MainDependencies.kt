@@ -1,6 +1,6 @@
-object CoreDependencies {
-    const val androidx = "androidx.core:core-ktx:${Versions.androidx}"
-    const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
+object MainDependencies {
+    const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
+    const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
     const val material = "com.google.android.material:material:${Versions.material}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
 
