@@ -1,0 +1,20 @@
+object Versions {
+    const val androidx = "1.7.0"
+    const val appCompat = "1.4.2"
+    const val material = "1.6.1"
+    const val fragmentKtx = "1.4.1"
+    const val lifecycle = "2.4.1"
+    const val room = "2.4.2"
+    const val hiltCore = "2.41"
+    const val hilt = "1.0.0"
+    const val okhttp = "4.9.2"
+    const val retrofit = "2.9.0"
+    const val timber = "4.7.1"
+    const val arrow = "1.0.1"
+    const val coroutines = "1.4.1"
+
+    const val junit = "4.13.2"
+    const val mockk = "1.10.5"
+    const val junitExt = "1.1.3"
+    const val espresso = "3.4.0"
+}
