@@ -15,5 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "MovieApp"
 include ':app'
 include ':core'
+include ':data'
 
 enableFeaturePreview("VERSION_CATALOGS")
