@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    compileSdk ConfigData.compileSdk
+    compileSdk 32
 
     defaultConfig {
-        minSdk ConfigData.minSdk
-        targetSdk ConfigData.targetSdk
+        minSdk 21
+        targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -36,25 +36,17 @@ android {
 
 dependencies {
 
-    implementation MainDependencies.coreKtx
-    implementation MainDependencies.appcompat
-    implementation MainDependencies.material
+    implementation libs.bundles.androidx
+    implementation libs.material
 
-    implementation MainDependencies.lifecycle
-    implementation MainDependencies.liveData
+    implementation libs.lifecycle.runtime
 
-    implementation MainDependencies.okhttpLogging
-    implementation MainDependencies.retrofit
-    implementation MainDependencies.retrofitGsonConverter
+    implementation libs.bundles.coroutines
 
-    implementation MainDependencies.hiltAndroid
-    kapt MainDependencies.hiltCompiler
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
 
-    implementation MainDependencies.arrowCore
-    implementation MainDependencies.timber
-
-    testImplementation TestDependencies.junit4
-    testImplementation TestDependencies.mockk
-    testImplementation TestDependencies.hiltAndroidTesting
-    kaptTest TestDependencies.hiltCompiler
+    testImplementation libs.junit
+    testImplementation libs.mockk
+    testImplementation libs.coroutines.test
 }
