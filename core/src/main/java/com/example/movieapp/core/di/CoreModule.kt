@@ -26,5 +26,4 @@ class CoreModule {
     @Provides
     @Named(DEFAULT)
     fun provideDefaultDispatcher(): CoroutineDispatcher = Dispatchers.Default
-
 }

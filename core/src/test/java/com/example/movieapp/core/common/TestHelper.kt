@@ -1,7 +1,7 @@
 package com.example.movieapp.core.common
 
 import com.icgen.movieapp.core.model.Movie
-import java.util.*
+import java.util.UUID
 import kotlin.random.Random
 
 object TestHelper {
