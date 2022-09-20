@@ -1,6 +1,6 @@
 package com.example.movieapp.core.redux
 
-abstract class StateMachine<S: State, A: Action>(
+abstract class StateMachine<S : State, A : Action>(
     private val middleware: Middleware<S, A>? = null
 ) : Store<S, A>() {
 

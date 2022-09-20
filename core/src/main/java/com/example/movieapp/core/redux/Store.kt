@@ -3,7 +3,7 @@ package com.example.movieapp.core.redux
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
-abstract class Store<S: State, A: Action> {
+abstract class Store<S : State, A : Action> {
 
     abstract val reducer: Reducer<S, A>
     abstract val initialState: S
