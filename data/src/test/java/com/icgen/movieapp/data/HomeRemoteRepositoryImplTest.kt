@@ -35,10 +35,10 @@ class HomeRemoteRepositoryImplTest {
             coEvery { remoteSource.getPopularMovies() } returns emptyList()
 
             // Act
-            homeRepositoryImpl.getTrendingMovies()
+            homeRepositoryImpl.getPopularMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getTrendingMovies() }
+            coVerify(exactly = 1) { remoteSource.getPopularMovies() }
         }
     }
 
@@ -49,10 +49,10 @@ class HomeRemoteRepositoryImplTest {
             coEvery { remoteSource.getUpcomingMovies() } returns emptyList()
 
             // Act
-            homeRepositoryImpl.getTrendingMovies()
+            homeRepositoryImpl.getUpcomingMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getTrendingMovies() }
+            coVerify(exactly = 1) { remoteSource.getUpcomingMovies() }
         }
     }
 
@@ -63,10 +63,10 @@ class HomeRemoteRepositoryImplTest {
             coEvery { remoteSource.getTopRatedMovies() } returns emptyList()
 
             // Act
-            homeRepositoryImpl.getTrendingMovies()
+            homeRepositoryImpl.getTopRatedMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getTrendingMovies() }
+            coVerify(exactly = 1) { remoteSource.getTopRatedMovies() }
         }
     }
 }
