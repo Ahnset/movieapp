@@ -124,7 +124,6 @@ class ApiServiceTest {
         enqueueSuccessResponse(response)
     }
 
-
     private fun enqueueSuccessResponse(response: String) {
         mockWebServer.enqueue(
             MockResponse().setBody(response)

@@ -16,5 +16,4 @@ interface ApiService {
 
     @GET("/movie/top_rated")
     suspend fun getTopRatedMovies(): MovieApiDto
-
 }
