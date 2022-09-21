@@ -16,6 +16,7 @@ hiltCore = "2.41"
 hilt = "2.43.2"
 okhttp = "4.10.0"
 retrofit = "2.9.0"
+mockwebserver = "4.6.0"
 timber = "4.7.1"
 arrow = "1.0.1"
 coroutines = "1.6.2"
@@ -46,6 +47,7 @@ timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 loggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+mockWebServer = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "mockwebserver" }
 gsonConverter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 junit = { module = "junit:junit", version.ref = "junit" }
 junitExt = { module = "androidx.test.ext:junit", version.ref = "junitExt" }
@@ -56,7 +58,7 @@ espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref =
 coroutines = ["coroutines-android", "coroutines-core"]
 androidx = ["coreKtx", "appcompat"]
 okhttp = ["okhttp", "loggingInterceptor"]
-rerofit = ["retrofit", "gsonConverter"]
+retrofit = ["retrofit", "gsonConverter"]
 
 [plugins]
 android = { id = "com.android.application", version.ref = "agp" }
