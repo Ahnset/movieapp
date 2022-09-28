@@ -19,3 +19,5 @@ include ':data'
 
 enableFeaturePreview("VERSION_CATALOGS")
 include ':remote'
+include ':features:home'
+include ':presentation'
