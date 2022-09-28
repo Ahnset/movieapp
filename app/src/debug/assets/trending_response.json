@@ -1,0 +1,420 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+      "id": 616037,
+      "title": "Thor: Love and Thunder",
+      "original_language": "en",
+      "original_title": "Thor: Love and Thunder",
+      "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+      "poster_path": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        14,
+        28,
+        35
+      ],
+      "popularity": 2521.937,
+      "release_date": "2022-07-06",
+      "video": false,
+      "vote_average": 6.771,
+      "vote_count": 3772
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pdD47rPAYKVdPasoyhSAFPIFIWo.jpg",
+      "id": 718930,
+      "title": "Bullet Train",
+      "original_language": "en",
+      "original_title": "Bullet Train",
+      "overview": "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe—all with connected, yet conflicting, objectives—on the world's fastest train.",
+      "poster_path": "/tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        35,
+        53
+      ],
+      "popularity": 1055.774,
+      "release_date": "2022-07-03",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 900
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+      "id": 361743,
+      "title": "Top Gun: Maverick",
+      "original_language": "en",
+      "original_title": "Top Gun: Maverick",
+      "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+      "poster_path": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "popularity": 1633.729,
+      "release_date": "2022-05-24",
+      "video": false,
+      "vote_average": 8.36,
+      "vote_count": 3980
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/doKogHyd0BFlEwQClE3B0opnbdN.jpg",
+      "id": 429473,
+      "title": "Lou",
+      "original_language": "en",
+      "original_title": "Lou",
+      "overview": "A young girl is kidnapped during a powerful storm. Her mother joins forces with her mysterious neighbour to set off in pursuit of the kidnapper. Their journey will test their limits and expose the dark secrets of their past.",
+      "poster_path": "/djM2s4wSaATn4jVB33cV05PEbV7.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "popularity": 199.343,
+      "release_date": "2022-09-23",
+      "video": false,
+      "vote_average": 6.143,
+      "vote_count": 77
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nnUQqlVZeEGuCRx8SaoCU4XVHJN.jpg",
+      "id": 532639,
+      "title": "Pinocchio",
+      "original_language": "en",
+      "original_title": "Pinocchio",
+      "overview": "A wooden puppet embarks on a thrilling adventure to become a real boy.",
+      "poster_path": "/g8sclIV4gj1TZqUpnL82hKOTK3B.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        14,
+        12,
+        10751
+      ],
+      "popularity": 4635.646,
+      "release_date": "2022-09-07",
+      "video": false,
+      "vote_average": 6.779,
+      "vote_count": 714
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/geYUecpFI2AonDLhjyK9zoVFcMv.jpg",
+      "id": 810693,
+      "title": "Jujutsu Kaisen 0",
+      "original_language": "ja",
+      "original_title": "劇場版 呪術廻戦 0",
+      "overview": "Yuta Okkotsu is a nervous high school student who is suffering from a serious problem—his childhood friend Rika has turned into a curse and won't leave him alone. Since Rika is no ordinary curse, his plight is noticed by Satoru Gojo, a teacher at Jujutsu High, a school where fledgling exorcists learn how to combat curses. Gojo convinces Yuta to enroll, but can he learn enough in time to confront the curse that haunts him?",
+      "poster_path": "/23oJaeBh0FDk2mQ2P240PU9Xxfh.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "popularity": 1922.962,
+      "release_date": "2021-12-24",
+      "video": false,
+      "vote_average": 8.251,
+      "vote_count": 464
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2k9tBql5GYH328Krj66tDT9LtFZ.jpg",
+      "id": 760741,
+      "title": "Beast",
+      "original_language": "en",
+      "original_title": "Beast",
+      "overview": "A recently widowed man and his two teenage daughters travel to a game reserve in South Africa. However, their journey of healing soon turns into a fight for survival when a bloodthirsty lion starts to stalk them.",
+      "poster_path": "/iRV0IB5xQeOymuGGUBarTecQVAl.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        12,
+        18,
+        27
+      ],
+      "popularity": 3689.282,
+      "release_date": "2022-08-11",
+      "video": false,
+      "vote_average": 7.145,
+      "vote_count": 479
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ghsPsvM0sEztdNT4kUlTsBF2LEF.jpg",
+      "id": 852046,
+      "title": "Athena",
+      "original_language": "fr",
+      "original_title": "Athena",
+      "overview": "Hours after the tragic death of their youngest brother in unexplained circumstances, three siblings have their lives thrown into chaos.",
+      "poster_path": "/fenNPxVF5ERy0CSyVruuEg959Hg.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        28,
+        53
+      ],
+      "popularity": 51.527,
+      "release_date": "2022-09-09",
+      "video": false,
+      "vote_average": 6.452,
+      "vote_count": 93
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mKyGisiT2ZrfKC9Bb7yK9lO7T8q.jpg",
+      "id": 556694,
+      "title": "Three Thousand Years of Longing",
+      "original_language": "en",
+      "original_title": "Three Thousand Years of Longing",
+      "overview": "A solitary scholar discovers an ancient bottle while on a trip to Istanbul and unleashes a djinn who offers her three wishes. Filled with reluctance, she is unable to come up with one until his stories spark in her a desire to be loved.",
+      "poster_path": "/8q6BrcwGEBGbtwtbCUVKEt2lmEy.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        14,
+        18,
+        10749
+      ],
+      "popularity": 182.889,
+      "release_date": "2022-08-24",
+      "video": false,
+      "vote_average": 6.952,
+      "vote_count": 262
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yWRvAfZmbzk61REYod4WQACDhRj.jpg",
+      "id": 762968,
+      "title": "Do Revenge",
+      "original_language": "en",
+      "original_title": "Do Revenge",
+      "overview": "A dethroned queen bee at a posh private high school strikes a secret deal with an unassuming new student to enact revenge on one another’s enemies.",
+      "poster_path": "/akIjKJDHcVN4bzifcEarKVPNpoa.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 841.959,
+      "release_date": "2022-09-14",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 266
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aCaqCvYn48b3lfGKGnUdVAE1yeB.jpg",
+      "id": 814800,
+      "title": "Goodnight Mommy",
+      "original_language": "en",
+      "original_title": "Goodnight Mommy",
+      "overview": "When twin brothers arrive home to find their mother’s demeanor altered and face covered in surgical bandages, they begin to suspect the woman beneath the gauze might not be their mother.",
+      "poster_path": "/oHhD5jD4S5ElPNNFCDKXJAzMZ5h.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        18,
+        53
+      ],
+      "popularity": 564.782,
+      "release_date": "2022-09-16",
+      "video": false,
+      "vote_average": 6.243,
+      "vote_count": 109
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rwgmDkIEv8VjAsWx25ottJrFvpO.jpg",
+      "id": 744276,
+      "title": "After Ever Happy",
+      "original_language": "en",
+      "original_title": "After Ever Happy",
+      "overview": "As a shocking truth about a couple's families emerges, the two lovers discover they are not so different from each other. Tessa is no longer the sweet, simple, good girl she was when she met Hardin — any more than he is the cruel, moody boy she fell so hard for.",
+      "poster_path": "/6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "popularity": 1314.99,
+      "release_date": "2022-08-24",
+      "video": false,
+      "vote_average": 6.415,
+      "vote_count": 88
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2RSirqZG949GuRwN38MYCIGG4Od.jpg",
+      "id": 985939,
+      "title": "Fall",
+      "original_language": "en",
+      "original_title": "Fall",
+      "overview": "For best friends Becky and Hunter, life is all about conquering fears and pushing limits. But after they climb 2,000 feet to the top of a remote, abandoned radio tower, they find themselves stranded with no way down. Now Becky and Hunter’s expert climbing skills will be put to the ultimate test as they desperately fight to survive the elements, a lack of supplies, and vertigo-inducing heights",
+      "poster_path": "/spCAxD99U1A6jsiePFoqdEcY0dG.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        53
+      ],
+      "popularity": 7087.515,
+      "release_date": "2022-08-11",
+      "video": false,
+      "vote_average": 7.449,
+      "vote_count": 1012
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7AiIrnDMaOhPrw9elJ5NNjijTW4.jpg",
+      "id": 916605,
+      "title": "The Infernal Machine",
+      "original_language": "en",
+      "original_title": "The Infernal Machine",
+      "overview": "Reclusive and controversial author Bruce Cogburn is drawn out of hiding by an obsessive fan, forcing the novelist to confront a past that he thought he could escape, and to account for events set in motion by his bestseller decades earlier. Cogburn's search for who is behind the manipulation and mental torment he encounters leads to an emotional roller-coaster ride full of fear and danger, where things are not always as clear as they seem to be, and where past deeds can have dire consequences.",
+      "poster_path": "/bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        53
+      ],
+      "popularity": 117.853,
+      "release_date": "2022-09-23",
+      "video": false,
+      "vote_average": 6.233,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
+      "id": 438148,
+      "title": "Minions: The Rise of Gru",
+      "original_language": "en",
+      "original_title": "Minions: The Rise of Gru",
+      "overview": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+      "poster_path": "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        14
+      ],
+      "popularity": 1535.662,
+      "release_date": "2022-06-29",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 2045
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xVbppM1xgbskOKgOuV8fbWBWHtt.jpg",
+      "id": 762504,
+      "title": "Nope",
+      "original_language": "en",
+      "original_title": "Nope",
+      "overview": "Residents in a lonely gulch of inland California bear witness to an uncanny, chilling discovery.",
+      "poster_path": "/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        9648,
+        878,
+        53
+      ],
+      "popularity": 1007.783,
+      "release_date": "2022-07-20",
+      "video": false,
+      "vote_average": 7.016,
+      "vote_count": 1589
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9hk5iiycq7ukRAAXQiJT9HZX3SX.jpg",
+      "id": 507086,
+      "title": "Jurassic World Dominion",
+      "original_language": "en",
+      "original_title": "Jurassic World Dominion",
+      "overview": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
+      "poster_path": "/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "popularity": 1726.427,
+      "release_date": "2022-06-01",
+      "video": false,
+      "vote_average": 7.049,
+      "vote_count": 3464
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7Y3LdmsZukXhmwxtO0UF95BFBTt.jpg",
+      "id": 682507,
+      "title": "Where the Crawdads Sing",
+      "original_language": "en",
+      "original_title": "Where the Crawdads Sing",
+      "overview": "Abandoned by her family, Kya raises herself all alone in the marshes outside of her small town. When her former boyfriend is found dead, Kya is instantly branded by the local townspeople and law enforcement as the prime suspect for his murder.",
+      "poster_path": "/6h5OCqRnWH7Dcm4IeP4JypBdtuI.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "popularity": 398.298,
+      "release_date": "2022-07-15",
+      "video": false,
+      "vote_average": 7.753,
+      "vote_count": 383
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yo0qfH2dQGGMxkfivdkz5zxVatD.jpg",
+      "id": 830788,
+      "title": "The Invitation",
+      "original_language": "en",
+      "original_title": "The Invitation",
+      "overview": "After the death of her mother, Evie is approached by an unknown cousin who invites her to a lavish wedding in the English countryside. Soon, she realizes a gothic conspiracy is afoot and must fight for survival as she uncovers twisted secrets in her family’s history.",
+      "poster_path": "/jcTq6gIskCsHlKDvCKKouEfiU66.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "popularity": 159.902,
+      "release_date": "2022-08-24",
+      "video": false,
+      "vote_average": 6.332,
+      "vote_count": 122
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7ABsaBkO1jA2psC8Hy4IDhkID4h.jpg",
+      "id": 19995,
+      "title": "Avatar",
+      "original_language": "en",
+      "original_title": "Avatar",
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "poster_path": "/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "popularity": 1651.679,
+      "release_date": "2009-12-10",
+      "video": false,
+      "vote_average": 7.52,
+      "vote_count": 26154
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}

@@ -1,0 +1,411 @@
+{
+  "dates": {
+    "maximum": "2022-10-21",
+    "minimum": "2022-09-26"
+  },
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/5GA3vV1aWWHTSDO5eno8V5zDo8r.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 760161,
+      "original_language": "en",
+      "original_title": "Orphan: First Kill",
+      "overview": "After escaping from an Estonian psychiatric facility, Leena Klammer travels to America by impersonating Esther, the missing daughter of a wealthy family. But when her mask starts to slip, she is put against a mother who will protect her family from the murderous “child” at any cost.",
+      "popularity": 8792.868,
+      "poster_path": "/wSqAXL1EHVJ3MOnJzMhUngc8gFs.jpg",
+      "release_date": "2022-07-27",
+      "title": "Orphan: First Kill",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 718
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2RSirqZG949GuRwN38MYCIGG4Od.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 985939,
+      "original_language": "en",
+      "original_title": "Fall",
+      "overview": "For best friends Becky and Hunter, life is all about conquering fears and pushing limits. But after they climb 2,000 feet to the top of a remote, abandoned radio tower, they find themselves stranded with no way down. Now Becky and Hunter’s expert climbing skills will be put to the ultimate test as they desperately fight to survive the elements, a lack of supplies, and vertigo-inducing heights",
+      "popularity": 7087.515,
+      "poster_path": "/spCAxD99U1A6jsiePFoqdEcY0dG.jpg",
+      "release_date": "2022-08-11",
+      "title": "Fall",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 997
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ugS5FVfCI3RV0ZwZtBV3HAV75OX.jpg",
+      "genre_ids": [
+        16,
+        878,
+        28
+      ],
+      "id": 610150,
+      "original_language": "ja",
+      "original_title": "ドラゴンボール超 スーパーヒーロー",
+      "overview": "The Red Ribbon Army, an evil organization that was once destroyed by Goku in the past, has been reformed by a group of people who have created new and mightier Androids, Gamma 1 and Gamma 2, and seek vengeance against Goku and his family.",
+      "popularity": 1963.513,
+      "poster_path": "/rugyJdeoJm7cSJL1q4jBpTNbxyU.jpg",
+      "release_date": "2022-06-11",
+      "title": "Dragon Ball Super: Super Hero",
+      "video": false,
+      "vote_average": 8,
+      "vote_count": 1733
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 634649,
+      "original_language": "en",
+      "original_title": "Spider-Man: No Way Home",
+      "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "popularity": 1080.31,
+      "poster_path": "/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
+      "release_date": "2021-12-15",
+      "title": "Spider-Man: No Way Home",
+      "video": false,
+      "vote_average": 8,
+      "vote_count": 15226
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jzWT0zd8U77fqWg5WgUfYaMzSFz.jpg",
+      "genre_ids": [
+        28,
+        878,
+        14
+      ],
+      "id": 526896,
+      "original_language": "en",
+      "original_title": "Morbius",
+      "overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+      "popularity": 569.874,
+      "poster_path": "/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+      "release_date": "2022-03-30",
+      "title": "Morbius",
+      "video": false,
+      "vote_average": 6.4,
+      "vote_count": 2576
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fQ5sZ6frXiAZuufgkVJnDwFFUQ4.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 948333,
+      "original_language": "en",
+      "original_title": "Into the Deep",
+      "overview": "Follows a woman desperate to escape her town, she meets a stranger who promises a romantic escape, but it results in deceit, mistrust, and violence.",
+      "popularity": 400.225,
+      "poster_path": "/bPyBqGBYjGzyLVHJEIsCwlZejk.jpg",
+      "release_date": "2022-08-26",
+      "title": "Into the Deep",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 14
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7Y3LdmsZukXhmwxtO0UF95BFBTt.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "id": 682507,
+      "original_language": "en",
+      "original_title": "Where the Crawdads Sing",
+      "overview": "Abandoned by her family, Kya raises herself all alone in the marshes outside of her small town. When her former boyfriend is found dead, Kya is instantly branded by the local townspeople and law enforcement as the prime suspect for his murder.",
+      "popularity": 398.298,
+      "poster_path": "/6h5OCqRnWH7Dcm4IeP4JypBdtuI.jpg",
+      "release_date": "2022-07-15",
+      "title": "Where the Crawdads Sing",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 382
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9IDJpHROaC0S1ZlIxrvzOcOX5yC.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        80
+      ],
+      "id": 629542,
+      "original_language": "en",
+      "original_title": "The Bad Guys",
+      "overview": "When the infamous Bad Guys are finally caught after years of countless heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
+      "popularity": 369.86,
+      "poster_path": "/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
+      "release_date": "2022-03-17",
+      "title": "The Bad Guys",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 1035
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/z0PogF61Je5EXkJyjDh1cyqqGvY.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        53,
+        878
+      ],
+      "id": 619730,
+      "original_language": "en",
+      "original_title": "Don't Worry Darling",
+      "overview": "Alice and Jack are lucky to be living in the idealized community of Victory, the experimental company town housing the men who work for the top-secret Victory Project and their families. But when cracks in their idyllic life begin to appear, exposing flashes of something much more sinister lurking beneath the attractive façade, Alice can’t help questioning exactly what they’re doing in Victory, and why.",
+      "popularity": 426.287,
+      "poster_path": "/jOqxKIOC92BVyinYO1Fm73XY7Tc.jpg",
+      "release_date": "2022-09-21",
+      "title": "Don't Worry Darling",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 192
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mTupUmnuwwAyA0CNqpwaZn5mqjk.jpg",
+      "genre_ids": [
+        28,
+        27,
+        53,
+        10752,
+        14
+      ],
+      "id": 697799,
+      "original_language": "en",
+      "original_title": "WarHunt",
+      "overview": "1945. A U.S. military cargo plane loses control and violently crashes behind enemy lines in the middle of the German black forest. Major Johnson sends a squad of his bravest soldiers on a rescue mission to retrieve the top-secret material the plane was carrying, led by Sergeants Brewer and Walsh. They soon discover hanged Nazi soldiers and other dead bodies bearing ancient, magical symbols. Suddenly their compasses fail, their perceptions twist and straying from the group leads to profound horrors as they are attacked by a powerful, supernatural force.",
+      "popularity": 310.058,
+      "poster_path": "/9HFFwZOTBB7IPFmn9E0MXdWave3.jpg",
+      "release_date": "2022-01-21",
+      "title": "WarHunt",
+      "video": false,
+      "vote_average": 5.1,
+      "vote_count": 57
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fILWktCfh0ZiKWjWwyXalWzSvKX.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 758330,
+      "original_language": "en",
+      "original_title": "Good Luck to You, Leo Grande",
+      "overview": "Nancy Stokes doesn’t know good sex. Whatever it may be, Nancy, a retired schoolteacher, is pretty sure she has never had it, but she is determined to finally do something about that. She even has a plan: It involves an anonymous hotel room, and a young sex worker who calls himself Leo Grande.",
+      "popularity": 262.895,
+      "poster_path": "/5wQydIQYho2wz1suPOoPoNgMzCm.jpg",
+      "release_date": "2022-06-17",
+      "title": "Good Luck to You, Leo Grande",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 125
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54PmeEzQMvpojpJBku61ZGQnWUX.jpg",
+      "genre_ids": [
+        16,
+        12,
+        28,
+        14
+      ],
+      "id": 900667,
+      "original_language": "ja",
+      "original_title": "ONE PIECE FILM RED",
+      "overview": "Uta — the most beloved singer in the world. Her voice, which she sings with while concealing her true identity, has been described as “otherworldly.” She will appear in public for the first time at a live concert. As the venue fills with all kinds of Uta fans — excited pirates, the Navy watching closely, and the Straw Hats led by Luffy who simply came to enjoy her sonorous performance — the voice that the whole world has been waiting for is about to resound.",
+      "popularity": 287.009,
+      "poster_path": "/m80kPdrmmtEh9wlLroCp0bwUGH0.jpg",
+      "release_date": "2022-08-06",
+      "title": "One Piece Film Red",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 90
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AqpiLT9IqB8y4FIIC8FbfgK9EKq.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 834742,
+      "original_language": "en",
+      "original_title": "First Love",
+      "overview": "A young man’s difficult entry into adulthood, who experiences the highs and lows of his first love, while dealing with the familial fallout spurred by the financial crisis of 2008.",
+      "popularity": 249.934,
+      "poster_path": "/gwLNm5VYq68Q65100uOr5fyAh9A.jpg",
+      "release_date": "2022-06-17",
+      "title": "First Love",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 62
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/piEEg5kDQyxK05V4Am8sVxFe267.jpg",
+      "genre_ids": [
+        12,
+        16,
+        35,
+        10751,
+        14
+      ],
+      "id": 676701,
+      "original_language": "es",
+      "original_title": "Tadeo Jones 3: La Tabla Esmeralda",
+      "overview": "Tad would love for his archeologist colleagues to accept him as one of their own, but he always messes everything up. Tad accidentally destroys a sarcophagus and unleashes an ancient spell endangering the lives of his friends: Mummy, Jeff and Belzoni. With everyone against him and only helped by Sara, he sets off on an adventure that will take him from Mexico to Chicago and from Paris to Egypt, in order to put an end to the curse of the Mummy.",
+      "popularity": 218.716,
+      "poster_path": "/yt0CGOtKbFGR4bqLnDyB0rJeUrZ.jpg",
+      "release_date": "2022-08-24",
+      "title": "Tad the Lost Explorer and the Curse of the Mummy",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/grATqZhXqK9wN7nH0BzjVIgatZD.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 436270,
+      "original_language": "en",
+      "original_title": "Black Adam",
+      "overview": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods and imprisoned just as quickly Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+      "popularity": 226.467,
+      "poster_path": "/jbISzZUXJgVtROrgUU2pnD6tpFx.jpg",
+      "release_date": "2022-10-19",
+      "title": "Black Adam",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mKyGisiT2ZrfKC9Bb7yK9lO7T8q.jpg",
+      "genre_ids": [
+        14,
+        18,
+        10749
+      ],
+      "id": 556694,
+      "original_language": "en",
+      "original_title": "Three Thousand Years of Longing",
+      "overview": "A solitary scholar discovers an ancient bottle while on a trip to Istanbul and unleashes a djinn who offers her three wishes. Filled with reluctance, she is unable to come up with one until his stories spark in her a desire to be loved.",
+      "popularity": 182.889,
+      "poster_path": "/8q6BrcwGEBGbtwtbCUVKEt2lmEy.jpg",
+      "release_date": "2022-08-24",
+      "title": "Three Thousand Years of Longing",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 260
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3tmpWdxKgc2BvOkqBaGCWloNqh5.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "id": 913290,
+      "original_language": "en",
+      "original_title": "Barbarian",
+      "overview": "In town for a job interview, a young woman arrives at her Airbnb late at night only to find that it has been mistakenly double-booked and a strange man is already staying there. Against her better judgement, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other guest.",
+      "popularity": 170.107,
+      "poster_path": "/9WDk6Nu9RbeBAPutywTUa28rZej.jpg",
+      "release_date": "2022-09-08",
+      "title": "Barbarian",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 46
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tt79dbOPd9Z9ykEOpvckttgYXwH.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 545611,
+      "original_language": "en",
+      "original_title": "Everything Everywhere All at Once",
+      "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+      "popularity": 159.91,
+      "poster_path": "/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+      "release_date": "2022-03-24",
+      "title": "Everything Everywhere All at Once",
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 1787
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wB8xWKLCZJZx13uavLffRhvPBSE.jpg",
+      "genre_ids": [
+        80,
+        18,
+        10749,
+        9648
+      ],
+      "id": 705996,
+      "original_language": "ko",
+      "original_title": "헤어질 결심",
+      "overview": "From a mountain peak in South Korea, a man plummets to his death. Did he jump, or was he pushed? When detective Hae-joon arrives on the scene, he begins to suspect the dead man’s wife Seo-rae. But as he digs deeper into the investigation, he finds himself trapped in a web of deception and desire.",
+      "popularity": 172.504,
+      "poster_path": "/vvdEFKmp9q5F4V3PhCj9FWUFPC2.jpg",
+      "release_date": "2022-06-29",
+      "title": "Decision to Leave",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 204
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AhkirfgU32n0D1uxpaGYJEKy2Hu.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 754609,
+      "original_language": "en",
+      "original_title": "Mrs. Harris Goes to Paris",
+      "overview": "A 1950s London cleaning lady falls in love with an haute couture dress by Christian Dior and decides to gamble everything for the sake of this folly.",
+      "popularity": 129.645,
+      "poster_path": "/eUg0HDLhTEDcXGBU2iK6QRBILv4.jpg",
+      "release_date": "2022-07-15",
+      "title": "Mrs. Harris Goes to Paris",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 56
+    }
+  ],
+  "total_pages": 32,
+  "total_results": 633
+}
