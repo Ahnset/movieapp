@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slide_image_content_description">slide image</string>
+    <string name="slide_play_button_content_description">Play button</string>
+    <string name="slide_gradient_effect_content_description">Slide gradient effect</string>
+    <string name="home_error_retry_button_text">Retry</string>
+    <string name="popular_movies_title">Popular Movies</string>
+    <string name="top_rated_movies_title">Top Rated Movies</string>
+    <string name="upcoming_movies_title">Upcoming Movies</string>
+    <string name="whoops_title">whoops</string>
+    <string name="home_error_icon_content_description">Error Icon</string>
+    <string name="movie_poster_image_content_description">Movie poster image</string>
+</resources>
