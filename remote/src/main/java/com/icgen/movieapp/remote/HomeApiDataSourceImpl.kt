@@ -1,14 +1,14 @@
 package com.icgen.movieapp.remote
 
 import com.icgen.movieapp.data.model.MovieData
-import com.icgen.movieapp.data.source.home.HomeRemoteSource
+import com.icgen.movieapp.data.source.home.HomeApiDataSource
 import com.icgen.movieapp.remote.mapper.toDataModel
 import com.icgen.movieapp.remote.service.ApiService
 import javax.inject.Inject
 
 class HomeApiDataSourceImpl @Inject constructor(
     private val service: ApiService
-) : HomeRemoteSource {
+) : HomeApiDataSource {
 
     override suspend fun getTrendingMovies(): List<MovieData> {
         return service.getTrendingMovies()
