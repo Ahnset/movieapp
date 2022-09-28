@@ -1,5 +1,6 @@
 package com.example.movieapp.core.usecase.home
 
+import com.example.movieapp.core.common.Dispatcher
 import com.example.movieapp.core.common.TestHelper.makeMovies
 import com.example.movieapp.core.repository.HomeRepository
 import io.mockk.coEvery
@@ -16,12 +17,17 @@ import java.net.SocketTimeoutException
 class GetPopularMoviesUseCaseTest {
 
     private val repository: HomeRepository = mockk(relaxed = true)
-    private val testDispatcher = UnconfinedTestDispatcher()
+    private val testDispatcher = Dispatcher(
+        io = UnconfinedTestDispatcher(),
+        main = UnconfinedTestDispatcher(),
+        default = UnconfinedTestDispatcher(),
+    )
+
     private val useCase = GetPopularMoviesUseCase(repository, testDispatcher)
 
     @Test
     fun `should call getPopularMovies() when executed`() {
-        return runTest(testDispatcher) {
+        return runTest(testDispatcher.io) {
             // Act
             useCase()
 
@@ -32,7 +38,7 @@ class GetPopularMoviesUseCaseTest {
 
     @Test
     fun `should return success with correct data when executed with success`() {
-        return runTest(testDispatcher) {
+        return runTest(testDispatcher.io) {
             // Arrange
             val movies = makeMovies(2)
             coEvery { repository.getPopularMovies() } returns movies
@@ -48,7 +54,7 @@ class GetPopularMoviesUseCaseTest {
 
     @Test
     fun `should return failure when executed with exception`() {
-        return runTest(testDispatcher) {
+        return runTest(testDispatcher.io) {
             // Arrange
             val exception = SocketTimeoutException()
             coEvery { repository.getPopularMovies() } throws exception
