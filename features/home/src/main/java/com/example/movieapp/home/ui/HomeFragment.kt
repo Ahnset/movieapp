@@ -121,4 +121,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             "TODO:// Add Detail Feature for Movie $id", Snackbar.LENGTH_LONG
         ).show()
     }
+
+    override fun onDestroy() {
+        binding.apply {
+            popularList.adapter = null
+            upcomingList.adapter = null
+            topRatedList.adapter = null
+            slider.adapter = null
+        }
+
+        super.onDestroy()
+    }
 }
