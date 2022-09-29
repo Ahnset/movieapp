@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs'
     id 'dagger.hilt.android.plugin'
@@ -11,13 +11,11 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.movieapp"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
 
-        testInstrumentationRunner "com.example.movieapp.common.HiltTestRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -26,10 +24,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -37,18 +41,12 @@ android {
 
 dependencies {
 
-    implementation project(':core')
-    implementation project(':data')
-    implementation project(':remote')
+    implementation project(":core")
     implementation project(':presentation')
-    implementation project(':features:home')
-    implementation project(':features:detail')
 
     implementation libs.bundles.androidx
     implementation libs.fragmentKtx
     implementation libs.material
-
-    implementation libs.gson
 
     implementation libs.bundles.lifecycle
 
@@ -56,27 +54,13 @@ dependencies {
 
     implementation libs.bundles.coroutines
 
+    implementation libs.glide
+    kapt libs.glideCompiler
+
     implementation libs.hilt.android
     kapt libs.hilt.compiler
 
     testImplementation libs.junit
     testImplementation libs.mockk
     testImplementation libs.coroutines.test
-
-    debugImplementation libs.fragmentTesting
-
-    androidTestImplementation libs.junitExt
-    androidTestImplementation libs.testRunner
-    androidTestImplementation libs.testRules
-    androidTestImplementation libs.mockWebServer
-    androidTestImplementation libs.espresso.core
-    androidTestImplementation libs.espresso.contrib
-    androidTestImplementation libs.coroutines.test
-
-    androidTestImplementation('org.awaitility:awaitility-kotlin:4.2.0') {
-        exclude group: 'org.hamcrest'
-    }
-
-    androidTestImplementation libs.hilt.androidTest
-    kaptAndroidTest libs.hilt.compiler
 }
