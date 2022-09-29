@@ -1,6 +1,6 @@
 package com.icgen.movieapp.data
 
-import com.icgen.movieapp.data.source.home.HomeRemoteSource
+import com.icgen.movieapp.data.source.home.HomeApiDataSource
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
@@ -11,62 +11,62 @@ import org.junit.Test
 @ExperimentalCoroutinesApi
 class HomeRemoteRepositoryImplTest {
 
-    private val remoteSource: HomeRemoteSource = mockk(relaxed = true)
-    private val homeRepositoryImpl = HomeRepositoryImpl(remoteSource)
+    private val apiDataSource: HomeApiDataSource = mockk(relaxed = true)
+    private val homeRepositoryImpl = HomeRepositoryImpl(apiDataSource)
 
     @Test
-    fun `should call remoteSource getTrendingMovies() once when getTrendingMovies() is called`() {
+    fun `should call apiDataSource getTrendingMovies() once when getTrendingMovies() is called`() {
         return runTest {
             // Arrange
-            coEvery { remoteSource.getTrendingMovies() } returns emptyList()
+            coEvery { apiDataSource.getTrendingMovies() } returns emptyList()
 
             // Act
             homeRepositoryImpl.getTrendingMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getTrendingMovies() }
+            coVerify(exactly = 1) { apiDataSource.getTrendingMovies() }
         }
     }
 
     @Test
-    fun `should call remoteSource getPopularMovies() once when getTrendingMovies() is called`() {
+    fun `should call apiDataSource getPopularMovies() once when getPopularMovies() is called`() {
         return runTest {
             // Arrange
-            coEvery { remoteSource.getPopularMovies() } returns emptyList()
+            coEvery { apiDataSource.getPopularMovies() } returns emptyList()
 
             // Act
             homeRepositoryImpl.getPopularMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getPopularMovies() }
+            coVerify(exactly = 1) { apiDataSource.getPopularMovies() }
         }
     }
 
     @Test
-    fun `should call remoteSource getUpcomingMovies() once when getTrendingMovies() is called`() {
+    fun `should call apiDataSource getUpcomingMovies() once when getUpcomingMovies() is called`() {
         return runTest {
             // Arrange
-            coEvery { remoteSource.getUpcomingMovies() } returns emptyList()
+            coEvery { apiDataSource.getUpcomingMovies() } returns emptyList()
 
             // Act
             homeRepositoryImpl.getUpcomingMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getUpcomingMovies() }
+            coVerify(exactly = 1) { apiDataSource.getUpcomingMovies() }
         }
     }
 
     @Test
-    fun `should call remoteSource getTopRatedMovies() once when getTrendingMovies() is called`() {
+    fun `should call apiDataSource getTopRatedMovies() once when getTopRatedMovies() is called`() {
         return runTest {
             // Arrange
-            coEvery { remoteSource.getTopRatedMovies() } returns emptyList()
+            coEvery { apiDataSource.getTopRatedMovies() } returns emptyList()
 
             // Act
             homeRepositoryImpl.getTopRatedMovies()
 
             // Assert
-            coVerify(exactly = 1) { remoteSource.getTopRatedMovies() }
+            coVerify(exactly = 1) { apiDataSource.getTopRatedMovies() }
         }
     }
 }

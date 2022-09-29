@@ -3,11 +3,11 @@ package com.icgen.movieapp.data
 import com.example.movieapp.core.repository.HomeRepository
 import com.icgen.movieapp.core.model.Movie
 import com.icgen.movieapp.data.mapper.toCoreModel
-import com.icgen.movieapp.data.source.home.HomeRemoteSource
+import com.icgen.movieapp.data.source.home.HomeApiDataSource
 import javax.inject.Inject
 
 class HomeRepositoryImpl @Inject constructor(
-    private val remoteSource: HomeRemoteSource
+    private val remoteSource: HomeApiDataSource
 ) : HomeRepository {
 
     override suspend fun getTrendingMovies(): List<Movie> {

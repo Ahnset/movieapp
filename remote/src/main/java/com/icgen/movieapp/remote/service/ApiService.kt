@@ -5,15 +5,15 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("/trending/movie/week")
+    @GET("trending/movie/week")
     suspend fun getTrendingMovies(): MovieApiDto
 
-    @GET("/movie/popular")
+    @GET("movie/popular")
     suspend fun getPopularMovies(): MovieApiDto
 
-    @GET("/movie/upcoming")
+    @GET("movie/upcoming")
     suspend fun getUpcomingMovies(): MovieApiDto
 
-    @GET("/movie/top_rated")
+    @GET("movie/top_rated")
     suspend fun getTopRatedMovies(): MovieApiDto
 }
