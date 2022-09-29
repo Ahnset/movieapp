@@ -122,7 +122,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         ).show()
     }
 
-    override fun onDestroy() {
+    override fun onDestroyView() {
         binding.apply {
             popularList.adapter = null
             upcomingList.adapter = null
@@ -130,6 +130,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             slider.adapter = null
         }
 
-        super.onDestroy()
+        super.onDestroyView()
     }
 }
