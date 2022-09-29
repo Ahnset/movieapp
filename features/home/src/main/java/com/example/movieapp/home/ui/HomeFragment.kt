@@ -1,5 +1,6 @@
 package com.example.movieapp.home.ui
 
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapp.home.databinding.FragmentHomeBinding
@@ -18,8 +20,8 @@ import com.example.movieapp.home.redux.HomeState.HomeCatalogsLoaded
 import com.example.movieapp.home.redux.HomeState.Idle
 import com.example.movieapp.home.redux.HomeViewModel
 import com.example.movieapp.presentation.base.BaseFragment
+import com.example.movieapp.presentation.common.NavigationHelper.DETAIL_DEEP_LINK
 import com.example.movieapp.presentation.model.MovieUI
-import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -116,10 +118,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     private fun onMovieClicked(id: Int) {
-        Snackbar.make(
-            requireActivity().findViewById(android.R.id.content),
-            "TODO:// Add Detail Feature for Movie $id", Snackbar.LENGTH_LONG
-        ).show()
+        val destination = Uri.parse("$DETAIL_DEEP_LINK$id")
+        findNavController().navigate(destination)
     }
 
     override fun onDestroyView() {

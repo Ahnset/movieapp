@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.Visibility.VISIBLE
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
+import com.example.movieapp.common.MockWebServerHelper.setErrorMockedResponse
 import com.example.movieapp.common.MockWebServerHelper.setSuccessMockedResponse
 import com.example.movieapp.common.launchFragmentInHiltContainer
 import com.example.movieapp.home.ui.HomeFragment
@@ -76,20 +77,37 @@ class HomeFragmentTest {
     }
 
     @Test
-    fun assertToastIsShownWhenSliderItemIsClicked(): Unit = runBlocking {
+    fun assertErrorViewIsShownWhenDataIsNotFetched(): Unit = runBlocking {
         // Arrange
-        val expectedId = 616037
-        setSuccessMockedResponse(mockWebServer)
+        setErrorMockedResponse(mockWebServer)
 
         // Act
         launchFragmentInHiltContainer<HomeFragment>()
         await.until(homeIsReady())
 
-        onView(withId(R.id.slider))
+        // Assert
+        onView(withId(R.id.errorContent))
+            .check(matches(withEffectiveVisibility(VISIBLE)))
+    }
+
+    @Test
+    fun assertMoviesAreFetchedWhenRetryButtonIsClicked(): Unit = runBlocking {
+        // Arrange
+        setErrorMockedResponse(mockWebServer)
+
+        // Act
+        launchFragmentInHiltContainer<HomeFragment>()
+        await.until(homeIsReady())
+
+        setSuccessMockedResponse(mockWebServer)
+
+        onView(withId(R.id.errorRetryButton))
             .perform(click())
 
+        await.until(homeIsReady())
+
         // Assert
-        onView(withText("TODO:// Add Detail Feature for Movie $expectedId"))
+        onView(withId(R.id.homeContent))
             .check(matches(withEffectiveVisibility(VISIBLE)))
     }
 

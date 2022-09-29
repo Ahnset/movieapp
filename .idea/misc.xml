@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2777777777777778" />
+        <entry key="features/detail/src/main/res/layout/fragment_detail.xml" value="0.2537037037037037" />
         <entry key="features/home/src/main/res/drawable/default_indicator.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/gradient_bg.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/ic_play.xml" value="0.1655" />
