@@ -1,13 +1,13 @@
 package com.icgen.movieapp.remote.common
 
+import com.icgen.movieapp.remote.dto.CastDto
+import com.icgen.movieapp.remote.dto.CreditDto
+import com.icgen.movieapp.remote.dto.DetailDto
+import com.icgen.movieapp.remote.dto.GenreDto
 import com.icgen.movieapp.remote.dto.MovieApiDto
 import com.icgen.movieapp.remote.dto.MovieResultDto
-import com.icgen.movieapp.remote.dto.DetailDto
-import com.icgen.movieapp.remote.dto.CreditDto
 import com.icgen.movieapp.remote.dto.PreviewDto
-import com.icgen.movieapp.remote.dto.CastDto
 import com.icgen.movieapp.remote.dto.VideoDto
-import com.icgen.movieapp.remote.dto.GenreDto
 import java.util.UUID
 import kotlin.random.Random
 
@@ -59,7 +59,7 @@ object TestHelper {
 
     fun makeVideoDto() =
         VideoDto(
-            id = Random.nextInt(0, 2),
+            id = UUID.randomUUID().toString(),
             type = UUID.randomUUID().toString(),
             key = UUID.randomUUID().toString(),
         )

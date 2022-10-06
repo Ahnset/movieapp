@@ -1,7 +1,7 @@
 package com.icgen.movieapp.data.model
 
 data class VideoData(
-    val id: Int,
+    val id: String,
     val type: String,
     val key: String,
 )

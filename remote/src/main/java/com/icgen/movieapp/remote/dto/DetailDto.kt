@@ -7,7 +7,7 @@ data class DetailDto(
     val title: String,
     val overview: String,
     val genres: List<GenreDto>,
-    @SerializedName("poster_path") val posterPath: String,
+    @SerializedName("poster_path") val posterPath: String?,
     val popularity: Double,
     @SerializedName("vote_average") val voteAverage: Double,
     @SerializedName("vote_count") val voteCount: Int,

@@ -10,7 +10,7 @@ object TestHelper {
 
     fun makeVideo() =
         Video(
-            id = Random.nextInt(0, 1),
+            id = UUID.randomUUID().toString(),
             type = UUID.randomUUID().toString(),
             key = UUID.randomUUID().toString(),
         )

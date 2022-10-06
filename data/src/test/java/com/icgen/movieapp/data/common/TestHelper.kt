@@ -1,10 +1,10 @@
 package com.icgen.movieapp.data.common
 
-import com.icgen.movieapp.data.model.MovieData
 import com.icgen.movieapp.data.model.CastData
-import com.icgen.movieapp.data.model.GenreData
-import com.icgen.movieapp.data.model.VideoData
 import com.icgen.movieapp.data.model.DetailData
+import com.icgen.movieapp.data.model.GenreData
+import com.icgen.movieapp.data.model.MovieData
+import com.icgen.movieapp.data.model.VideoData
 import java.util.UUID
 import kotlin.random.Random
 
@@ -32,7 +32,7 @@ object TestHelper {
 
     fun makeVideoData() =
         VideoData(
-            id = Random.nextInt(0, 2),
+            id = UUID.randomUUID().toString(),
             type = UUID.randomUUID().toString(),
             key = UUID.randomUUID().toString(),
         )

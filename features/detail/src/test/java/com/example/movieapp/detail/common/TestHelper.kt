@@ -27,7 +27,7 @@ object TestHelper {
                 "releaseDate"
             ),
             listOf(Cast(0, "name", "profilePath")),
-            listOf(Video(0, "type", "key")),
+            listOf(Video("0", "type", "key")),
             listOf(Movie(0, "title", "posterPath"))
         )
 

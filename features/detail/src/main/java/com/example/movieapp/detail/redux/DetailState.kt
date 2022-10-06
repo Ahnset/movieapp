@@ -8,13 +8,13 @@ import com.example.movieapp.presentation.model.VideoUI
 
 sealed class DetailState : State {
     object Idle : DetailState()
-    object GetMovieInfoStarted: DetailState()
+    object GetMovieInfoStarted : DetailState()
     data class MovieInfoError(val message: String?) : DetailState()
 
     data class MovieInfoLoaded(
         val detail: DetailUI,
         val cast: List<CastUI>,
-        val video: List<VideoUI>,
+        val videos: List<VideoUI>,
         val similarMovies: List<MovieUI>
     ) : DetailState()
 }

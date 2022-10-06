@@ -5,7 +5,7 @@ data class DetailUI(
     val title: String,
     val overview: String,
     val genres: List<GenreUI>,
-    val posterPath: String,
+    val posterPath: String?,
     val popularity: Double,
     val voteAverage: Double,
     val voteCount: Int,
