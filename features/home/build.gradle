@@ -54,6 +54,8 @@ dependencies {
 
     implementation libs.bundles.coroutines
 
+    implementation libs.okhttp
+
     implementation libs.glide
     kapt libs.glideCompiler
 

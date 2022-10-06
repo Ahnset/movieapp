@@ -4,17 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2777777777777778" />
+        <entry key="features/detail/src/main/res/drawable/poster_foreground.xml" value="0.136" />
+        <entry key="features/detail/src/main/res/layout/activity_player.xml" value="0.1" />
+        <entry key="features/detail/src/main/res/layout/fragment_detail.xml" value="0.1" />
+        <entry key="features/detail/src/main/res/layout/item_cast.xml" value="0.2898148148148148" />
+        <entry key="features/detail/src/main/res/layout/item_similar_movie.xml" value="0.25" />
         <entry key="features/home/src/main/res/drawable/default_indicator.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/gradient_bg.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/ic_play.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/indicator_background.xml" value="0.1655" />
         <entry key="features/home/src/main/res/drawable/indicator_selector.xml" value="0.1655" />
+        <entry key="features/home/src/main/res/drawable/poster_foreground.xml" value="0.136" />
         <entry key="features/home/src/main/res/drawable/selected_indicator.xml" value="0.1655" />
         <entry key="features/home/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="features/home/src/main/res/layout/item_movie.xml" value="0.2935185185185185" />
         <entry key="features/home/src/main/res/layout/item_slide.xml" value="0.2759259259259259" />
         <entry key="features/home/src/main/res/layout/movie_item.xml" value="0.2759259259259259" />
         <entry key="features/home/src/main/res/layout/slide_item.xml" value="0.215625" />
+        <entry key="presentation/src/main/res/drawable/gradient_bg.xml" value="0.1" />
       </map>
     </option>
   </component>

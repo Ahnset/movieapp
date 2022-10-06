@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_back_button_marginStart">8dp</dimen>
+    <dimen name="detail_back_button_marginTop">16dp</dimen>
+    <dimen name="movie_poster_fixed_width">125dp</dimen>
+    <dimen name="movie_poster_fixed_height">175dp</dimen>
+    <dimen name="detail_movie_thumbnail_marginStart">16dp</dimen>
+    <dimen name="detail_movie_thumbnail_marginTop">-64dp</dimen>
+    <dimen name="detail_movie_title_marginStart">16dp</dimen>
+    <dimen name="detail_movie_title_marginTop">32dp</dimen>
+    <dimen name="detail_movie_title_marginEnd">16dp</dimen>
+    <dimen name="detail_movie_title_textSize">18sp</dimen>
+    <dimen name="detail_movie_genre_marginEnd">16dp</dimen>
+    <dimen name="detail_movie_release_date_marginEnd">16dp</dimen>
+    <dimen name="detail_movie_rating_marginEnd">16dp</dimen>
+    <dimen name="detail_title_text_marginTop">16dp</dimen>
+    <dimen name="detail_title_text_textSize">20sp</dimen>
+    <dimen name="item_similar_card_radius">10dp</dimen>
+    <dimen name="item_similar_card_elevation">8dp</dimen>
+    <dimen name="item_similar_card_marginEnd">16dp</dimen>
+    <dimen name="item_similar_title_marginStart">24dp</dimen>
+    <dimen name="item_similar_title_marginEnd">24dp</dimen>
+    <dimen name="item_similar_title_marginBottom">24dp</dimen>
+    <dimen name="item_similar_title_textSize">18sp</dimen>
+    <dimen name="detail_movie_recyclerView_margin">16dp</dimen>
+    <dimen name="detail_movie_bookmark_margin">24dp</dimen>
+</resources>

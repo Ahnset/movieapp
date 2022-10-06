@@ -7,7 +7,9 @@ import androidx.test.espresso.matcher.ViewMatchers.Visibility.GONE
 import androidx.test.espresso.matcher.ViewMatchers.Visibility.VISIBLE
 import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import androidx.test.espresso.matcher.ViewMatchers.withText
+import com.example.movieapp.common.ApiConstants.TRENDING_RESPONSE_FILE
+import com.example.movieapp.common.MockWebServerHelper.serverIsDone
+import com.example.movieapp.common.MockWebServerHelper.setErrorMockedResponse
 import com.example.movieapp.common.MockWebServerHelper.setSuccessMockedResponse
 import com.example.movieapp.common.launchFragmentInHiltContainer
 import com.example.movieapp.home.ui.HomeFragment
@@ -23,7 +25,6 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import java.util.concurrent.Callable
 import javax.inject.Inject
 
 @HiltAndroidTest
@@ -33,7 +34,8 @@ class HomeFragmentTest {
     @get:Rule(order = 0)
     var hiltRule = HiltAndroidRule(this)
 
-    @Inject lateinit var client: OkHttpClient
+    @Inject
+    lateinit var client: OkHttpClient
     private val mockWebServer = MockWebServer()
 
     @Before
@@ -43,15 +45,15 @@ class HomeFragmentTest {
     }
 
     @Test
-    fun assertHomeFragmentLaunchInContainer() = runTest {
+    fun shouldLaunchFragmentInContainer() = runTest {
         // Act
         launchFragmentInHiltContainer<HomeFragment>()
     }
 
     @Test
-    fun assertLoaderIsShownWhenFetchingData(): Unit = runBlocking {
+    fun shouldShowLoaderWhenFetchingData(): Unit = runBlocking {
         // Arrange
-        setSuccessMockedResponse(mockWebServer)
+        setSuccessMockedResponse(mockWebServer, TRENDING_RESPONSE_FILE)
 
         // Act
         launchFragmentInHiltContainer<HomeFragment>()
@@ -62,13 +64,13 @@ class HomeFragmentTest {
     }
 
     @Test
-    fun assertLoaderIsGoneWhenDataIsFetched(): Unit = runBlocking {
+    fun shouldHideLoaderWhenDataIsFetched(): Unit = runBlocking {
         // Arrange
-        setSuccessMockedResponse(mockWebServer)
+        setSuccessMockedResponse(mockWebServer, TRENDING_RESPONSE_FILE)
 
         // Act
         launchFragmentInHiltContainer<HomeFragment>()
-        await.until(homeIsReady())
+        await.until(serverIsDone(client))
 
         // Assert
         onView(withId(R.id.homeProgress))
@@ -76,27 +78,38 @@ class HomeFragmentTest {
     }
 
     @Test
-    fun assertToastIsShownWhenSliderItemIsClicked(): Unit = runBlocking {
+    fun shouldShowErrorViewWhenDataIsNotFetched(): Unit = runBlocking {
         // Arrange
-        val expectedId = 616037
-        setSuccessMockedResponse(mockWebServer)
+        setErrorMockedResponse(mockWebServer)
 
         // Act
         launchFragmentInHiltContainer<HomeFragment>()
-        await.until(homeIsReady())
-
-        onView(withId(R.id.slider))
-            .perform(click())
+        await.until(serverIsDone(client))
 
         // Assert
-        onView(withText("TODO:// Add Detail Feature for Movie $expectedId"))
+        onView(withId(R.id.errorContent))
             .check(matches(withEffectiveVisibility(VISIBLE)))
     }
 
-    private fun homeIsReady(): Callable<Boolean> {
-        return Callable {
-            client.dispatcher.runningCallsCount() == 0
-        }
+    @Test
+    fun shouldShowContentWhenRetryIsSuccess(): Unit = runBlocking {
+        // Arrange
+        setErrorMockedResponse(mockWebServer)
+
+        // Act
+        launchFragmentInHiltContainer<HomeFragment>()
+        await.until(serverIsDone(client))
+
+        setSuccessMockedResponse(mockWebServer, TRENDING_RESPONSE_FILE)
+
+        onView(withId(R.id.errorRetryButton))
+            .perform(click())
+
+        await.until(serverIsDone(client))
+
+        // Assert
+        onView(withId(R.id.homeContent))
+            .check(matches(withEffectiveVisibility(VISIBLE)))
     }
 
     @After

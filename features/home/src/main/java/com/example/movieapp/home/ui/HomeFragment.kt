@@ -1,15 +1,16 @@
 package com.example.movieapp.home.ui
 
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
 import com.example.movieapp.home.databinding.FragmentHomeBinding
 import com.example.movieapp.home.redux.HomeState
 import com.example.movieapp.home.redux.HomeState.GetHomeCatalogsStarted
@@ -18,8 +19,10 @@ import com.example.movieapp.home.redux.HomeState.HomeCatalogsLoaded
 import com.example.movieapp.home.redux.HomeState.Idle
 import com.example.movieapp.home.redux.HomeViewModel
 import com.example.movieapp.presentation.base.BaseFragment
+import com.example.movieapp.presentation.common.NavigationHelper.DETAIL_DEEP_LINK
+import com.example.movieapp.presentation.common.UiHelper.hideViews
+import com.example.movieapp.presentation.common.UiHelper.showViews
 import com.example.movieapp.presentation.model.MovieUI
-import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -41,7 +44,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private fun observeViewState() {
         lifecycleScope.launchWhenResumed {
             viewModel.viewState?.collect { viewState ->
-                Log.d("ViewState", viewState.toString())
                 renderView(viewState)
             }
         }
@@ -49,7 +51,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     private fun renderView(viewState: HomeState) {
         when (viewState) {
-            is Idle -> { /* Do nothing */ }
+            is Idle -> return
             is GetHomeCatalogsStarted -> showLoading()
             is HomeCatalogsLoaded -> showMovieCatalogs(viewState)
             is HomeCatalogsError -> showErrorMessage(viewState.message)
@@ -57,28 +59,31 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     private fun showLoading() {
-        binding.homeContent.isVisible = false
-        binding.errorContent.isVisible = false
-        binding.homeProgress.isVisible = true
+        binding.apply {
+            hideViews(homeContent, errorContent)
+            showViews(homeProgress)
+        }
     }
 
     private fun hideLoading() {
-        binding.homeContent.isVisible = true
-        binding.homeProgress.isVisible = false
-        binding.errorContent.isVisible = false
+        binding.apply {
+            showViews(homeContent)
+            hideViews(homeProgress, errorContent)
+        }
     }
 
     private fun displayErrorContent() {
-        binding.homeProgress.isVisible = false
-        binding.homeContent.isVisible = false
-        binding.errorContent.isVisible = true
+        binding.apply {
+            hideViews(homeProgress, homeContent)
+            showViews(errorContent)
+        }
     }
 
     private fun showErrorMessage(message: String?) {
         binding.apply {
             errorMessage.text = message
             errorRetryButton.setOnClickListener {
-                viewModel.start()
+                viewModel.retry()
             }
         }
         displayErrorContent()
@@ -104,6 +109,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private fun setupMovieList(list: RecyclerView, movies: List<MovieUI>) {
         val moviesAdapter = MoviesAdapter(::onMovieClicked)
         list.apply {
+            moviesAdapter.stateRestorationPolicy = PREVENT_WHEN_EMPTY
             adapter = moviesAdapter
             layoutManager = LinearLayoutManager(
                 requireContext(),
@@ -116,10 +122,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     private fun onMovieClicked(id: Int) {
-        Snackbar.make(
-            requireActivity().findViewById(android.R.id.content),
-            "TODO:// Add Detail Feature for Movie $id", Snackbar.LENGTH_LONG
-        ).show()
+        val destination = Uri.parse("$DETAIL_DEEP_LINK$id")
+        findNavController().navigate(destination)
     }
 
     override fun onDestroyView() {

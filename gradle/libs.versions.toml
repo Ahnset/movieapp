@@ -8,6 +8,8 @@ versionCode = "1"
 versionName = "1.0"
 coreKtx = "1.7.0"
 appcompat = "1.4.2"
+constraintlayout = "2.1.4"
+recyclerView = "1.2.0"
 material = "1.6.1"
 fragmentKtx = "1.4.1"
 fragmentTesting = "1.5.3"
@@ -33,10 +35,13 @@ idlingResources = "1.0.0"
 espresso = "3.4.0"
 agp = "7.2.2"
 kotlin = "1.6.10"
+youtube = "11.1.0"
 
 [libraries]
 coreKtx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+recyclerView = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerView" }
 fragmentKtx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
 fragmentTesting = { module = "androidx.fragment:fragment-testing", version.ref = "fragmentTesting" }
 lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
@@ -64,6 +69,7 @@ gsonConverter = { module = "com.squareup.retrofit2:converter-gson", version.ref 
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 glideCompiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+youtube = { module = "com.pierfrancescosoffritti.androidyoutubeplayer:core", version.ref = "youtube" }
 junit = { module = "junit:junit", version.ref = "junit" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 junitExt = { module = "androidx.test.ext:junit", version.ref = "junitExt" }
@@ -75,7 +81,7 @@ espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version
 
 [bundles]
 coroutines = ["coroutines-android", "coroutines-core"]
-androidx = ["coreKtx", "appcompat"]
+androidx = ["coreKtx", "appcompat", "constraintlayout", "recyclerView"]
 okhttp = ["okhttp", "loggingInterceptor"]
 retrofit = ["retrofit", "gsonConverter"]
 lifecycle = ["lifecycle-runtime", "lifecycle-viewmodel"]

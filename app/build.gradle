@@ -42,6 +42,7 @@ dependencies {
     implementation project(':remote')
     implementation project(':presentation')
     implementation project(':features:home')
+    implementation project(':features:detail')
 
     implementation libs.bundles.androidx
     implementation libs.fragmentKtx
@@ -63,6 +64,10 @@ dependencies {
     testImplementation libs.coroutines.test
 
     debugImplementation libs.fragmentTesting
+    debugImplementation libs.leakcanary
+
+    implementation libs.bundles.okhttp
+    implementation libs.bundles.retrofit
 
     androidTestImplementation libs.junitExt
     androidTestImplementation libs.testRunner
