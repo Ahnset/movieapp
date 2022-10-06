@@ -40,6 +40,7 @@ dependencies {
 
     implementation libs.bundles.androidx
     implementation libs.lifecycle.runtime
+    implementation libs.material
     implementation libs.bundles.coroutines
 
     implementation libs.glide

@@ -64,6 +64,10 @@ dependencies {
     testImplementation libs.coroutines.test
 
     debugImplementation libs.fragmentTesting
+    debugImplementation libs.leakcanary
+
+    implementation libs.bundles.okhttp
+    implementation libs.bundles.retrofit
 
     androidTestImplementation libs.junitExt
     androidTestImplementation libs.testRunner
