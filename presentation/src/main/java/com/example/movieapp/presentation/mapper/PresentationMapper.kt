@@ -5,10 +5,10 @@ import com.example.movieapp.core.model.Detail
 import com.example.movieapp.core.model.Genre
 import com.example.movieapp.core.model.Video
 import com.example.movieapp.presentation.model.CastUI
+import com.example.movieapp.presentation.model.DetailUI
 import com.example.movieapp.presentation.model.GenreUI
 import com.example.movieapp.presentation.model.MovieUI
 import com.example.movieapp.presentation.model.VideoUI
-import com.example.movieapp.presentation.model.DetailUI
 import com.icgen.movieapp.core.model.Movie
 
 fun Movie.toPresentationModel() =

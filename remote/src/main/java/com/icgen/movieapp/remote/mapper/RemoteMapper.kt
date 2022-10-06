@@ -1,7 +1,15 @@
 package com.icgen.movieapp.remote.mapper
 
-import com.icgen.movieapp.data.model.*
-import com.icgen.movieapp.remote.dto.*
+import com.icgen.movieapp.data.model.CastData
+import com.icgen.movieapp.data.model.DetailData
+import com.icgen.movieapp.data.model.GenreData
+import com.icgen.movieapp.data.model.MovieData
+import com.icgen.movieapp.data.model.VideoData
+import com.icgen.movieapp.remote.dto.CastDto
+import com.icgen.movieapp.remote.dto.DetailDto
+import com.icgen.movieapp.remote.dto.GenreDto
+import com.icgen.movieapp.remote.dto.MovieResultDto
+import com.icgen.movieapp.remote.dto.VideoDto
 
 fun MovieResultDto.toDataModel() =
     MovieData(id, title, posterPath)

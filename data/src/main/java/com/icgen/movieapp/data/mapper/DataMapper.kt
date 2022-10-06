@@ -5,7 +5,11 @@ import com.example.movieapp.core.model.Detail
 import com.example.movieapp.core.model.Genre
 import com.example.movieapp.core.model.Video
 import com.icgen.movieapp.core.model.Movie
-import com.icgen.movieapp.data.model.*
+import com.icgen.movieapp.data.model.CastData
+import com.icgen.movieapp.data.model.DetailData
+import com.icgen.movieapp.data.model.GenreData
+import com.icgen.movieapp.data.model.MovieData
+import com.icgen.movieapp.data.model.VideoData
 
 fun MovieData.toCoreModel() =
     Movie(id, title, posterPath)

@@ -1,16 +1,17 @@
 package com.icgen.movieapp.remote.mapper
 
-import com.icgen.movieapp.data.model.*
+import com.icgen.movieapp.data.model.CastData
+import com.icgen.movieapp.data.model.DetailData
+import com.icgen.movieapp.data.model.GenreData
+import com.icgen.movieapp.data.model.MovieData
+import com.icgen.movieapp.data.model.VideoData
 import com.icgen.movieapp.remote.common.TestHelper.makeCastDto
 import com.icgen.movieapp.remote.common.TestHelper.makeDetailDto
 import com.icgen.movieapp.remote.common.TestHelper.makeGenreDto
 import com.icgen.movieapp.remote.common.TestHelper.makeMovieResultDto
 import com.icgen.movieapp.remote.common.TestHelper.makeVideoDto
-import com.icgen.movieapp.remote.dto.MovieResultDto
 import org.junit.Assert
 import org.junit.Test
-import java.util.UUID
-import kotlin.random.Random
 
 class RemoteMapperTest {
 

@@ -10,11 +10,8 @@ import com.icgen.movieapp.data.common.TestHelper.makeDetailData
 import com.icgen.movieapp.data.common.TestHelper.makeGenreData
 import com.icgen.movieapp.data.common.TestHelper.makeMovieData
 import com.icgen.movieapp.data.common.TestHelper.makeVideoData
-import com.icgen.movieapp.data.model.MovieData
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import java.util.UUID
-import kotlin.random.Random
 
 class DataMapperTest {
 
