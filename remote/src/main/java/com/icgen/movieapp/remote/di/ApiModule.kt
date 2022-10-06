@@ -4,6 +4,7 @@ import android.content.Context
 import com.icgen.movieapp.remote.BuildConfig
 import com.icgen.movieapp.remote.common.ApiHelper.OKHTTP_MAX_CACHE_SIZE
 import com.icgen.movieapp.remote.common.ApiKeyInterceptor
+import com.icgen.movieapp.remote.common.CacheInterceptor
 import com.icgen.movieapp.remote.service.ApiService
 import dagger.Module
 import dagger.Provides
@@ -48,6 +49,7 @@ open class ApiModule {
         return OkHttpClient.Builder()
             .addInterceptor(provideLoggingInterceptor(BuildConfig.DEBUG))
             .addInterceptor(ApiKeyInterceptor(key))
+            .addNetworkInterceptor(CacheInterceptor())
             .cache(provideCache(context))
             .build()
     }
