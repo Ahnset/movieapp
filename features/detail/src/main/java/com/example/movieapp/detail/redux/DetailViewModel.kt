@@ -9,7 +9,7 @@ import javax.inject.Inject
 @HiltViewModel
 class DetailViewModel @Inject constructor(
     stateMachine: DetailStateMachine
-) : ReduxViewModel<DetailState, DetailAction>(stateMachine){
+) : ReduxViewModel<DetailState, DetailAction>(stateMachine) {
 
     fun start(movieId: Int) {
         viewModelScope.launch {

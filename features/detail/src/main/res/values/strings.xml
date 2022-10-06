@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back_button_content_description">Back button</string>
+    <string name="overview_title">Overview</string>
+    <string name="cast_title">Cast</string>
+    <string name="similar_title">You May Also Like</string>
+    <string name="cast_image_content_description">Cast Image</string>
+    <string name="save_to_bookmark_button_text">Save to bookmark</string>
+    <string name="item_similar_movie_poster_content_description">poster for similar movies</string>
+    <string name="navigation_detail_label">Movie Detail</string>
+</resources>

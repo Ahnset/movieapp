@@ -2,4 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.movieapp.detail">
 
+    <application>
+        <activity
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.MovieApp.FullScreen"
+            android:name=".ui.PlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="true" />
+    </application>
+
 </manifest>

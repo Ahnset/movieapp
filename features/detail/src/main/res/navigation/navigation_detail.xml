@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.movieapp.detail.ui.DetailFragment"
-        android:label="Movie Detail"
+        android:label="@string/navigation_detail_label"
         tools:layout="@layout/fragment_detail">
 
         <argument

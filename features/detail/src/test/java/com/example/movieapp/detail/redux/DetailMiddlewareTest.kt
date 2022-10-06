@@ -1,10 +1,6 @@
 package com.example.movieapp.detail.redux
 
 import com.example.movieapp.core.common.Dispatcher
-import com.example.movieapp.core.model.Cast
-import com.example.movieapp.core.model.Detail
-import com.example.movieapp.core.model.Genre
-import com.example.movieapp.core.model.Video
 import com.example.movieapp.core.redux.Store
 import com.example.movieapp.core.usecase.detail.GetMovieInfoUseCase
 import com.example.movieapp.detail.common.TestHelper.makeMovieInfoLoadedFromOutput
@@ -13,8 +9,6 @@ import com.example.movieapp.detail.redux.DetailAction.GetMovieInfo
 import com.example.movieapp.detail.redux.DetailAction.GetMovieInfoError
 import com.example.movieapp.detail.redux.DetailAction.GetMovieInfoLoaded
 import com.example.movieapp.detail.redux.DetailState.GetMovieInfoStarted
-import com.example.movieapp.presentation.mapper.toPresentationModel
-import com.icgen.movieapp.core.model.Movie
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

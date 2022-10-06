@@ -4,8 +4,8 @@ import com.example.movieapp.core.common.Dispatcher
 import com.example.movieapp.core.redux.Middleware
 import com.example.movieapp.core.redux.Store
 import com.example.movieapp.core.usecase.detail.GetMovieInfoUseCase
-import com.example.movieapp.detail.redux.DetailAction.GetMovieInfoError
 import com.example.movieapp.detail.redux.DetailAction.GetMovieInfo
+import com.example.movieapp.detail.redux.DetailAction.GetMovieInfoError
 import com.example.movieapp.detail.redux.DetailAction.GetMovieInfoLoaded
 import com.example.movieapp.presentation.common.ListHelper.sliceOrGet
 import com.example.movieapp.presentation.mapper.toPresentationModel
@@ -46,12 +46,14 @@ class DetailMiddleware @Inject constructor(
         withContext(dispatcher.default) {
             output.apply {
                 val detail = detail.toPresentationModel()
-                val cast = cast.map { it.toPresentationModel() }
                 val videos = videos.map { it.toPresentationModel() }
+
+                val cast = cast.map { it.toPresentationModel() }
+                    .sliceOrGet(9)
 
                 val similarMovies = similarMovies
                     .map { it.toPresentationModel() }
-                    .sliceOrGet(10)
+                    .sliceOrGet(4)
 
                 store.dispatch(
                     GetMovieInfoLoaded(

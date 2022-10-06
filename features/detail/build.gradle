@@ -47,6 +47,7 @@ dependencies {
     implementation libs.bundles.androidx
     implementation libs.fragmentKtx
     implementation libs.material
+    implementation libs.youtube
 
     implementation libs.bundles.lifecycle
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detail_movie_poster_ratio">6:5</string>
+    <string name="detail_movie_thumbnail_content_description">detail movie thumbnail</string>
+    <string name="detail_movie_poster_content_description">detail movie poster</string>
+</resources>
