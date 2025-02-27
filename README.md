@@ -10,9 +10,10 @@ MovieApp provides movie information directly fetched from The Movie DB (TMDB) AP
 <img src="https://raw.githubusercontent.com/Ahnset/movieapp/master/preview/05.png" width="30%" vspace="10" hspace="10""><br>
 
 ## Features
-* Kotlin Coroutines with Flow (State Flow)
-* Clean Architecture with MVI & state machine (Redux)
-* Jetpack Navigation Component
+* Jetpack Compose
+* Clean Architecture
+* Kotlin Coroutines
+* Compose Navigation
 * Video streaming android-youtube-player
 * DI with Dagger Hilt
 
@@ -22,13 +23,9 @@ MovieApp provides movie information directly fetched from The Movie DB (TMDB) AP
 *   [Kotlin Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
 *   [Dagger Hilt](https://dagger.dev/hilt)
 *   [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
-*   [Jetpack Navigation](https://developer.android.com/guide/navigation)
-*   [Glide](https://github.com/bumptech/glide)
+*   [Jetpack Navigation](https://developer.android.com/develop/ui/compose/navigation)
+*   [Coil](https://coil-kt.github.io/coil/compose/)
 *   [Android Youtube Player](https://github.com/PierfrancescoSoffritti/android-youtube-player)
-*   [Mockk](https://github.com/mockk/mockk)
-*   [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver)
-*   [Espresso](https://developer.android.com/training/testing/espresso)
-*   [Leakcanary](https://square.github.io/leakcanary/)
 
 ## Author
 Christian Boni Ahnset

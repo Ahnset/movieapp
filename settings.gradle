@@ -5,6 +5,7 @@ pluginManagement {
         mavenCentral()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -12,13 +13,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MovieApp"
-include ':app'
-include ':core'
-include ':data'
 
-enableFeaturePreview("VERSION_CATALOGS")
-include ':remote'
+rootProject.name = "MovieApp"
+
+include ':app'
 include ':features:home'
-include ':presentation'
-include ':features:detail'
+include ':common'

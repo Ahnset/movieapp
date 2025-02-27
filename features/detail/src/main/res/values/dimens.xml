@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="detail_movie_rating_marginTop">4dp</dimen>
-    <dimen name="item_similar_card_width">200dp</dimen>
-    <dimen name="item_similar_card_height">150dp</dimen>
-</resources>

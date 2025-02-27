@@ -1,6 +1,9 @@
 *.iml
 .gradle
-/local.properties
+
+# ONLY FOR TESTING PURPOSE
+#/local.properties
+
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -12,4 +15,3 @@
 /captures
 .externalNativeBuild
 .cxx
-local.properties
