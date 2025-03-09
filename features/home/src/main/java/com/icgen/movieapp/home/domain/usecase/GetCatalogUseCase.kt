@@ -1,11 +1,9 @@
 package com.icgen.movieapp.home.domain.usecase
 
 
-import android.util.Log
 import com.icgen.movieapp.common.domain.model.Movie
 import com.icgen.movieapp.common.domain.usecase.BaseSuspendableUseCase
 import com.icgen.movieapp.common.util.Dispatcher
-import com.icgen.movieapp.common.util.ListHelper.sliceOrGet
 import com.icgen.movieapp.home.domain.repository.CatalogRepository
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
@@ -29,16 +27,6 @@ class GetCatalogUseCase @Inject constructor(
         val upcomingMovies = async(dispatcher.io) {
             repository.getUpcomingMovies()
         }
-
-        Log.e(
-            "RESPONSE",
-            Output(
-                popularMovies.await().sliceOrGet(3),
-                trendingMovies.await().sliceOrGet(3),
-                topRatedMovies.await().sliceOrGet(3),
-                upcomingMovies.await().sliceOrGet(3)
-            ).toString()
-        )
 
         Output(
             popularMovies.await(),
