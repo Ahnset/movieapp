@@ -52,12 +52,14 @@ fun NavGraphBuilder.homeNavGraph(navController: NavController) {
             )
         ) {
             val viewModel: DetailViewModel = hiltViewModel()
+            fun onRetryClick() = viewModel.retry()
 
             DetailScreen(
                 state = viewModel.state.value,
                 onMovieClick = ::navigateToDetail,
                 onBackButtonClick = ::navigateUp,
-                onPlayButtonClick = ::launchPlayer
+                onPlayButtonClick = ::launchPlayer,
+                onRetryButtonClick = ::onRetryClick
             )
         }
     }
