@@ -43,15 +43,21 @@ class DetailViewModel @Inject constructor(
         loadDetail()
     }
 
+    fun retry() {
+        _state.value = Loading
+        loadDetail()
+    }
+
     private fun loadDetail() {
         viewModelScope.launch(errorHandler) {
             val id = stateHandle.get<Int>(ID_PARAM) ?: 0
             val result = fetchDetail(id)
-            result?.let { _state.value = DetailLoaded(result) }
+            if (result != null) _state.value = DetailLoaded(result)
+            else _state.value = DetailError(getGenericErrorMessage(provider))
         }
     }
 
-    private suspend fun fetchDetail(id: Int) : Output? {
+    private suspend fun fetchDetail(id: Int): Output? {
         return withContext(dispatcher.io) {
             getDetailUseCase(id).getOrNull()
         }

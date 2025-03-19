@@ -21,7 +21,7 @@ import com.icgen.movieapp.home.presentation.catalog.CatalogState.Loading
 fun CatalogScreen(
     state: CatalogState,
     onMovieClick: (id: Int) -> Unit = {},
-    onRetryClick: () -> Unit
+    onRetryClick: () -> Unit = {}
 ) {
     when (state) {
         is Loading -> CircularProgress()

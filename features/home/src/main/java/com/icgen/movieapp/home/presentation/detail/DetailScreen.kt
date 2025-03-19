@@ -45,6 +45,7 @@ import com.icgen.movieapp.common.domain.model.Movie
 import com.icgen.movieapp.common.domain.model.Video
 import com.icgen.movieapp.common.presentation.theme.mainRed
 import com.icgen.movieapp.common.presentation.ui.CastSlider
+import com.icgen.movieapp.common.presentation.ui.CatalogErrorScreen
 import com.icgen.movieapp.common.presentation.ui.CircularProgress
 import com.icgen.movieapp.common.presentation.ui.MovieSlider
 import com.icgen.movieapp.common.presentation.ui.RatingBar
@@ -59,15 +60,15 @@ import com.icgen.movieapp.home.presentation.detail.DetailViewState.Loading
 @Composable
 fun DetailScreen(
     state: DetailViewState,
-    onMovieClick: (id: Int) -> Unit,
-    onBackButtonClick: () -> Unit,
-    onPlayButtonClick: (context: Context, key: String) -> Unit,
+    onMovieClick: (id: Int) -> Unit = {},
+    onBackButtonClick: () -> Unit = {},
+    onPlayButtonClick: (context: Context, key: String) -> Unit = {_,_ -> Unit},
+    onRetryButtonClick: () -> Unit = {},
 ) {
     when (state) {
         is DetailLoaded -> DisplayDetail(state, onMovieClick, onBackButtonClick, onPlayButtonClick)
         is Loading -> CircularProgress()
-        is DetailError -> { /* Display error view  */
-        }
+        is DetailError -> { CatalogErrorScreen(onRetryButtonClick) }
     }
 }
 
